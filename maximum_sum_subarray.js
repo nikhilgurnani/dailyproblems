@@ -4,9 +4,7 @@
  * IP => [ -2, -3, 4, -1, -2, 1, 5, -3 ]
  */
 
-let input = [ -2, -3, 4, -1, -2, 1, 5, -3 ];
-
-let findMaxSumSubarray = function() {
+let findMaxSumSubarray = function(input) {
 
     let currentSum = input[0];
     let largestSum = input[0];
@@ -31,4 +29,5 @@ let findMaxSumSubarray = function() {
 
 }
 
-console.log(findMaxSumSubarray());
+console.log(findMaxSumSubarray([ -2, -3, 4, -1, -2, 1, 5, -3 ]));
+console.log(findMaxSumSubarray([34, -50, 42, 14, -5, 86]))
