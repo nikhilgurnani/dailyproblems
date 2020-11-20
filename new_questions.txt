@@ -1,0 +1,33 @@
+Q1.
+
+
+Input: ar2[] = {2, 3, 7, 10, 12}
+       ar1[] = {1, 5, 7, 8, 89}
+
+Output: 35
+Input: ar1[] = {2, 3, 7, 10, 12, 15, 30, 34}
+        ar2[] = {1, 5, 7, 8, 10, 15, 16, 19}
+Output: 122
+
+Arrays are sorted, common element needs not be on same indices.
+Start iteration on array where len is smaller than the other -> might not be needed
+
+
+
+Max_sum = 0
+Current_sum = 0
+While max_sum < current_sum:
+	For i in range(0, len(ar1)):
+		If ar1[i] in ar2:
+
+		Current_sum += ar1[ i ]
+	Max_sum = max(current_sum, max_sum)
+
+
+https://codeshare.io/5MdzMR
+
+
+Q2. An array which is sorted and has n elements, your task is to check and return if there exists an element which occurs more than n/2 times in this array.
+
+[ 1, 2, 3, 5, 6, 6, 6, 6, 6 ] => n = 9
+[ 0, 1, 2, 3, 4, 5, 6, 7, 8]
